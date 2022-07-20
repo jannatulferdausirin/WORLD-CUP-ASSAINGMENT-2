@@ -5,7 +5,6 @@
 
 .body{
     font-family: 'Roboto', sans-serif;
-    
 }
  /* -----------------------
  header/banner section design start
@@ -36,15 +35,13 @@ height: 80px;
 width: 100px;
 font-size: 18px;
 }
-/* --------transorm effect---------- */
 .banner-img{
+height: 350px;
 width:50%;
-height: auto;
 }
 .banner-img img{
-    size: 100%;
+ size:100%
 }
-
 /* -----header section end ----*/
 
 /* --------------------
@@ -114,8 +111,7 @@ main blogs start
     grid-template-columns:repeat(3,1fr);
     grid-column-gap:20px;
     grid-row-gap:10px;
-    margin: 25px 40px;
-    
+    margin: 25px;
 }
 .button-transfer{
     margin: 10px;
@@ -126,8 +122,8 @@ main blogs start
     margin: 10px;
     padding: 10px;
 }
-a:hovar {
-    background-color: gray;
+.hovar{
+    background-color: rosybrown;
 }
 
 
@@ -144,42 +140,8 @@ a:hovar {
 .message-icon{
     font-size: 20px;
     padding-left:20px ;
- /* --------view all button start--------  */
-
 }
-.view-all{
-    align-self: center;
-    justify-items: center;
-    display: block;
-    margin-bottom: 20px;
-    margin:10px 10px;
-    padding:10px 10px;
-    height: 70px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    display: none;
-}
- .view-button{
-    background-color: #f11414;
-    border: 10px solid #f11414;
-    height: 30px;
-    width: 100px;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: center;
-    display: visible;
- }   
- .view-button a{
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    margin: 20px 20px;
-   
-
-
-
- }
+    
 
 /* -----------
 footer design

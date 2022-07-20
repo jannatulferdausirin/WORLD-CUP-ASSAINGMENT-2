@@ -1,0 +1,176 @@
+/* ----------
+   font
+------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+ /* -----------------------
+ header/banner section design start
+ -------------------------- */
+.banner-title{
+    display: flex;
+    background-color: black;
+}
+.banner-detail{
+    color:#FFFFFF;
+    width:50%;
+    align-self: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+.link-button{
+    background-color: #DD0000;
+    color:#FFFFFF;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.banner-img{
+height: 350px;
+width:50%;
+}
+.banner-img img{
+ size:100%
+}
+/* -----header section end ----*/
+
+/* --------------------
+main body design start
+----------------------*/
+
+/* ------upcoming button design start------ */
+.upcoming-button{
+    background-color:black ;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-column:5px ;
+    margin: 20px;
+    padding-left: 10px;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container-button-info{
+    margin: 10px;
+    padding:10px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+#blog-button-color{
+    background-color: #DD0000;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 10px;
+    justify-self: center;
+    
+}
+#blog-button-color a{
+    color: #FFFFFF;
+}
+#upcoming{
+    text-align: center;
+    justify-self: center;
+    width:125px;
+}
+.container-button-info a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+/* -------upcoming button design end------ */
+
+/* --------------
+main blogs start
+--------------- */
+.container-blogs{
+    display: flex;
+    margin-top: 30px;
+}
+.blog-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:20px;
+    grid-row-gap:10px;
+    margin: 30px;
+}
+.button-transfer{
+    margin: 10px;
+}
+.blog-img-detail{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+.blog-icon{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.hour-icon{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.message-icon{
+    font-size: 20px;
+    padding-left:20px ;
+    
+}
+
+
+
+
+/* -----------
+footer design
+---------------*/
+.footer{
+    background-color: rgb(7, 7, 7);
+    padding: 50px;
+    color: #FFFFFF;
+}
+.footer-info{
+    text-align: center;
+    margin: 10px;
+    padding:5px;
+}
+
+ hr{
+    border: .5px solid gainsboro;
+ }   
+
+.footer-link{
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-left: 20px;
+    margin: 40px;
+    align-content: space-between;
+}
+.footer-link-info a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.footer-icon i{
+    padding-left: 10px;
+    margin: 10px;
+    font-size: 25px;
+}

@@ -38,12 +38,73 @@ font-size: 18px;
 }
 /* --------transorm effect---------- */
 .banner-img{
-width:50%;
+width:50px;
 height: auto;
 }
 .banner-img img{
-    size: 100%;
+   min-height:450px;
 }
+
+/* -------transform translet design-------- */
+.main-tt{
+    color: #f80d0d;
+    display: flex;
+    line-height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+.load{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: crimson;
+    margin: 2px;
+    font-weight: bold;
+    color:#FFFFFF;
+    animation: animate 3s alternate infinite;
+
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{transform: translateY(-30px);
+    }
+
+    100%{transform: translateY(0px);
+
+    }
+
+}
+.load:nth-child(1){
+    animation-delay: .2s;
+}
+.load:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.load:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.load:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.load:nth-child(5) {
+    animation-delay: 1s;
+}
+.load:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.load:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+
+
 
 /* -----header section end ----*/
 
@@ -129,8 +190,6 @@ main blogs start
 a:hovar {
     background-color: gray;
 }
-
-
 
 .blog-icon{
     display: flex;

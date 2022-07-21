@@ -5,6 +5,14 @@
 
 .body{
     font-family: 'Roboto', sans-serif;
+    
+}
+
+h2{
+    font-size: 100%;
+}
+h1{
+    font-size: 100%;
 }
  /* -----------------------
  header/banner section design start
@@ -35,13 +43,76 @@ height: 80px;
 width: 100px;
 font-size: 18px;
 }
+
 .banner-img{
-height: 350px;
-width:50%;
+width:50px;
+height: auto;
 }
 .banner-img img{
- size:100%
+   min-height:450px;
 }
+
+/* -------transform translet design-------- */
+.main-tt{
+    color: #f80d0d;
+    display: flex;
+    line-height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+.load{
+    height: 50px;
+    width:30px;
+    border-radius: 50%;
+    background-color: crimson;
+    margin: 2px;
+    font-weight: bold;
+    color:#FFFFFF;
+    animation: animate 3s alternate infinite;
+
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{transform: translateY(-30px);
+    }
+
+    100%{transform: translateY(0px);
+
+    }
+
+}
+.load:nth-child(1){
+    animation-delay: .2s;
+}
+.load:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.load:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.load:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.load:nth-child(5) {
+    animation-delay: 1s;
+}
+.load:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.load:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+
+
+
 /* -----header section end ----*/
 
 /* --------------------
@@ -56,12 +127,13 @@ main body design start
     grid-column:5px ;
     height: 300px;
     width: 250px;
-    margin: 20px;
+    margin-top: 50px 10px;
     padding-left: 10px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    color: #FFFFFF;
 }
 
 .container-button-info{
@@ -76,24 +148,43 @@ main body design start
     justify-self: center;
 }
 #blog-button-color{
-    background-color: #DD0000;
+    background-color: whitesmoke;
     text-align: center;
-    color: #FFFFFF;
     border-radius: 10px;
     justify-self: center;
     
 }
-#blog-button-color a{
-    color: #FFFFFF;
-}
 #upcoming{
+    color:white;
     text-align: center;
     justify-self: center;
     width:125px;
+    background-color: #ee440b;
+    
+    
+}
+.blog-img{
+    
+    text-align:left;
+    margin: 20px;
+}
+.blog-img-detail{
+    margin: 20px;
+}
+.image-vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-vs img{
+    height: 120px;
+    width:200px;
+    margin: 10px;
 }
 .container-button-info a{
     text-decoration: none;
-    color: black;
     text-align: center;
     justify-content: center;
 }
@@ -111,37 +202,67 @@ main blogs start
     grid-template-columns:repeat(3,1fr);
     grid-column-gap:20px;
     grid-row-gap:10px;
-    margin: 25px;
+    margin: 25px 40px;
+    
+    
 }
 .button-transfer{
-    margin: 10px;
+    margin: 30px 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+   
 }
-.blog-img-detail{
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-}
-.hovar{
-    background-color: rosybrown;
-}
-
-
 
 .blog-icon{
     display: flex;
     align-items: center;
 }
-.hour-icon{
+.hour-icon {
     font-size: 20px;
     padding-right: 20px;
 }
 
-.message-icon{
+.message-icon {
     font-size: 20px;
-    padding-left:20px ;
+    padding: 20px;
+   
+ /* --------view all button start--------  */
+
 }
-    
+.view-all{
+    align-self: center;
+    justify-items: center;
+    display: block;
+    margin-bottom: 20px;
+    margin:10px 10px;
+    padding:10px 10px;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    display: none;
+}
+ .view-button{
+    background-color: #f11414;
+    border: 10px solid #f11414;
+    height: 30px;
+    width: 100px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    display: visible;
+ }   
+ .view-button a{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 20px 20px;
+   
+
+
+
+ }
 
 /* -----------
 footer design
@@ -156,7 +277,9 @@ footer design
     margin: 10px;
     padding:5px;
 }
-
+#goal{
+    font-size: 30px;
+}
  hr{
     border: .5px solid rgb(46, 44, 44);
  }   

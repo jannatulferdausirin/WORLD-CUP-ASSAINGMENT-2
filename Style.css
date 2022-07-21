@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
     
 }
+
  /* -----------------------
  header/banner section design start
  -------------------------- */
@@ -14,7 +15,10 @@
     display: flex;
     background-color: black;
 }
-.banner-detail{
+.banner-title .split-detail{
+    width:50%
+}
+.split-detail{
     color:#FFFFFF;
     width:50%;
     align-self: center;
@@ -22,6 +26,7 @@
     margin: 10px;
     padding: 10px 20px;
     font-size: 20px;
+    
 
 }
 .link-button {
@@ -32,19 +37,27 @@
     border: 8px solid #DD0000 ;
 }
 .link-button a{
-height: 80px;
-width: 100px;
+height: 120px;
+width: 150px;
 font-size: 18px;
 }
-/* --------transorm effect---------- */
+
 .banner-img{
 width:50px;
 height: auto;
 }
-.banner-img img{
-   min-height:450px;
+.split-detail img{
+   width:100%;
+   margin: 0%,auto;
 }
-
+@media screen and (max-width:576px){
+    .banner-title{
+        flex-direction: column-reverse;
+    }
+    .banner-title.split-detail{
+        width:100%;
+    }
+}
 /* -------transform translet design-------- */
 .main-tt{
     color: #f80d0d;
@@ -55,7 +68,7 @@ height: auto;
 }
 .load{
     height: 50px;
-    width:50px;
+    width:30px;
     border-radius: 50%;
     background-color: crimson;
     margin: 2px;
@@ -103,10 +116,8 @@ height: auto;
     animation-delay: 1.4s;
 }
 
-
-
-
 /* -----header section end ----*/
+
 
 /* --------------------
 main body design start
@@ -155,6 +166,10 @@ main body design start
     justify-self: center;
     width:125px;
 }
+.blog-img img{
+    height: 300px;
+    width: 380px;
+}
 .container-button-info a{
     text-decoration: none;
     color: black;
@@ -162,6 +177,41 @@ main body design start
     justify-content: center;
 }
 /* -------upcoming button design end------ */
+
+/*-------- ----
+Media queries
+-------------- */
+@media only screen and(min-width:550)and (max-width:688) {
+    .container{
+        width:100%;
+
+    }
+   .banner-detail,.banner-title,.main-tt,.upcoming-button,.blog-container .blog-img .footer-info .footer-icon{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  } 
+}
+
+@media only screen and(min-width:688)and (max-width:992) {
+    .container {
+        width: 100%;
+
+    }
+
+    .banner-detail,
+    .banner-title,
+    .main-tt,
+    .upcoming-button,
+    .blog-container .blog-img .footer-info .footer-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+
+
+
+
 
 /* --------------
 main blogs start
@@ -180,6 +230,9 @@ main blogs start
 }
 .button-transfer{
     margin: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
 }
 .blog-img-detail{
     justify-content: center;
@@ -187,9 +240,8 @@ main blogs start
     margin: 10px;
     padding: 10px;
 }
-a:hovar {
-    background-color: gray;
-}
+
+
 
 .blog-icon{
     display: flex;
@@ -252,6 +304,11 @@ footer design
     text-align: center;
     margin: 10px;
     padding:5px;
+    
+    
+}
+#goal{
+font-size: 40px;
 }
 
  hr{

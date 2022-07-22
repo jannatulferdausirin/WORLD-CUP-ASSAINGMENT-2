@@ -56,8 +56,11 @@ Media queries
 -------------- */
 /* --------Smaller Device--------- */
 @media screen and (max-width:576px){
-    .banner-title{
+    .banner-title {
         flex-direction: column-reverse;
+    }
+    .upcoming-button{
+        flex-direction: column;
     }
     .banner-title.split-detail{
         width:100%;
@@ -68,9 +71,12 @@ Media queries
     .banner-title .main-tt{
         grid-template-columns: repeat(1,1fr);
     }
-        .container-blogs.upcoming-button{
+        .container-blogs{
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
+         }
+         .view-all .view-button{
+            display:none ;
          }
 
         .footer .footer-icon{
@@ -82,25 +88,35 @@ Media queries
             grid-template-columns: repeat(1,1fr);
 
         }
+        .blog-container {
+          display: grid;
+          grid-template-columns: repeat (1, 1fr);
+           flex-direction: column;
+         }
+        
+         .blog-img {
+             width: 100%
+         }
 }
+                       
  /* -------Tablet device-------- */
-@media screen and(min-width:577px) and (max-width:700px){
+@media screen and(min-width:577px) and (max-width:992px){
     .container-blogs{
         grid-template-columns: repeat(2,1fr);
     }
         .banner-title .main-tt {
             grid-template-columns: repeat(1, 1fr);
         }
-    .view-all .view-button a{
-            display:visible;
-            grid-template-columns:repeat(1,
-                1fr) ;
-        }
-
-    .container-blogs.upcoming-button{
+    
+    .upcoming-button{
     display: flex;
-    grid-template-columns: repeat(3,1fr);
-    flex-direction: column;
+    width:100%;
+    flex-direction: column;justify-content: center;
+    align-items: center;
+}
+.view-button{
+    display: flex;
+    flex: block;
 }
 
 .footer .footer-icon {
@@ -111,38 +127,40 @@ Media queries
 .footer .footer-link {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 20px;
+    grid-column:20px;
 
 }
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-
+.blog-img img{
+    width:100%
+}
+}
 
 /* -------Smaller Device-------- */
 @media screen and (max-width:576px){
-    .blog-container{
-        grid-template-columns:repeat(1,1fr);
-    }
-      .container-blogs .blog-container .blog-img {
-        width: 100%
-    }
-
-    .container-blogs .blog-container .blog-img{
-        display: grid;
-        grid-template-columns:repeat(1,1fr) ;
-    }
-}
-
-/* ---------Tablet Screen------------ */
-@media screen and(min-widt:577px) and (max-width:700px){
-    .container-blogs.blog-container {
-        display: grid;
-        grid-template-columns:repeat(2,1fr) ;
-    }
-    
     
 }
 
 
+/* -------desktop media queries------- */
+
+@media only screen and(min-widt:992px) and (max-width:1312px){
+    .view-all .view-button{
+        display: none;
+    }
+    .footer-link {
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 20px;
+                margin: 40px;
+                align-content: space-between;
+        }
+}
 
 
 
@@ -217,14 +235,15 @@ main body design start
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-column:5px ;
-    height: 300px;
-    width: 250px;
+    height: 312px;
+    width: 372px;
     margin: 20px;
     padding-left: 10px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    border: 1px solid rgb(175, 168, 168);
 }
 
 .container-button-info{
@@ -233,10 +252,11 @@ main body design start
     background-color:whitesmoke;
     border-radius: 10px;
     height: 30px;
-    width: 100px;
+    width: 150px;
     text-align: center;
     justify-content: center;
     justify-self: center;
+    margin: 23;
 }
 #blog-button-color{
     background-color: #DD0000;
@@ -251,7 +271,7 @@ main body design start
 }
 #upcoming{
     text-align: center;
-    justify-self: center;
+    justify-content:center;
     width:125px;
 }
 .container-button-info a{
@@ -259,6 +279,19 @@ main body design start
     color: black;
     text-align: center;
     justify-content: center;
+}
+.image-vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.image-vs img {
+
+    width: 100%;
+    margin: 10px;
 }
 /* -------upcoming button design end------ */
 
@@ -275,9 +308,25 @@ main blogs start
     grid-template-columns:repeat(3,1fr);
     gap:10px;   
 }
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin: 25px 40px;
+    
+
+
+}
 .blog-img{
-    border: 1px solid rgb(255, 253, 253);
+    margin:10px;
+    padding: 20px;
+
     border-radius: 5px;
+    height: 312;
+    width: 352;
+    border: 1px solid rgb(210, 207, 207);
 }
 .blog-img img{
     width:100%;
@@ -315,13 +364,10 @@ main blogs start
 .view-all{
     align-self: center;
     justify-items: center;
-    display: block;
     margin-bottom: 20px;
     margin:10px 10px;
     padding:10px 10px;
     height: 70px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
     display: none;
 }
  .view-button{
@@ -332,7 +378,7 @@ main blogs start
     border-radius: 25px;
     align-items: center;
     justify-content: center;
-    display: visible;
+    
  }   
  .view-button a{
     text-align: center;
@@ -371,11 +417,12 @@ font-size: 40px;
 
 .footer-link{
     color: #FFFFFF;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    padding-left: 20px;
-    margin: 40px;
-    align-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding-left: 20px;
+        margin: 40px;
+        align-content: space-between;
+
 }
 .footer-link-info a{
     color:#FFFFFF;

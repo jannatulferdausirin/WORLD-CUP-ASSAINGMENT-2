@@ -88,13 +88,13 @@ Media queries
             grid-template-columns: repeat(1,1fr);
 
         }
-        .blog-container {
+        .blog-container .blog-img {
           display: grid;
           grid-template-columns: repeat (1, 1fr);
            flex-direction: column;
          }
         
-         .blog-img {
+         .blog-img img{
              width: 100%
          }
 }
@@ -107,16 +107,18 @@ Media queries
         .banner-title .main-tt {
             grid-template-columns: repeat(1, 1fr);
         }
+                .banner-title {
+                    flex-direction: column-reverse;
+                }
     
     .upcoming-button{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width:100%;
-    flex-direction: column;justify-content: center;
-    align-items: center;
+   
 }
-.view-button{
-    display: flex;
-    flex: block;
+
+
 }
 
 .footer .footer-icon {
@@ -130,17 +132,18 @@ Media queries
     grid-column:20px;
 
 }
-.blog-container {
+.blog-container .blog-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .blog-img img{
-    width:100%
-}
+    width:100%;
 }
 
-/* -------Smaller Device-------- */
-@media screen and (max-width:576px){
+@media screen and (min-wdth) and (max-width) {
+    .view-button {
+        DISPLAY: FLEX
+    }
     
 }
 
@@ -183,6 +186,9 @@ Media queries
     animation: animate 3s alternate infinite;
 
 }
+#idol {
+    font-size: 15px;}
+
 @keyframes animate{
     0%{
         transform: translateY(0px);
@@ -386,9 +392,6 @@ main blogs start
     text-decoration: none;
     color: #FFFFFF;
     margin: 20px 20px;
-   
-
-
 
  }
 

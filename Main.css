@@ -230,7 +230,7 @@ main blogs start
  /* --------view all button start--------  */
 
 }
-.view-all{
+/* .view-all{
     align-self: center;
     justify-items: center;
     display: block;
@@ -241,8 +241,8 @@ main blogs start
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     display: none;
-}
- .view-button{
+} */
+ /* .view-button{
     background-color: #f11414;
     border: 10px solid #f11414;
     height: 30px;
@@ -250,8 +250,8 @@ main blogs start
     border-radius: 25px;
     align-items: center;
     justify-content: center;
-    
- }   
+  } */
+/*    
  .view-button a{
     text-align: center;
     justify-content: center;
@@ -259,10 +259,7 @@ main blogs start
     color: #FFFFFF;
     margin: 20px 20px;
    
-
-
-
- }
+ } */
 
 /* -----------
 footer design

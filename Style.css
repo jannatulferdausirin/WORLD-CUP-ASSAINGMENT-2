@@ -83,11 +83,8 @@ Media queries
             display: grid;
             grid-template-columns: repeat(3,1fr);
         }
-        .footer .footer-link{
-            display:grid;
-            grid-template-columns: repeat(1,1fr);
-
-        }
+        
+        
         .blog-container .blog-img {
           display: grid;
           grid-template-columns: repeat (1, 1fr);
@@ -97,7 +94,7 @@ Media queries
          .blog-img img{
              width: 100%
          }
-}
+        }
                        
  /* -------Tablet device-------- */
 @media screen and(min-width:577px) and (max-width:992px){
@@ -117,10 +114,6 @@ Media queries
     width:100%;
    
 }
-
-
-}
-
 .footer .footer-icon {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -128,7 +121,7 @@ Media queries
 
 .footer .footer-link {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column:20px;
 
 }
@@ -140,17 +133,14 @@ Media queries
     width:100%;
 }
 
-@media screen and (min-wdth) and (max-width) {
-    .view-button {
-        DISPLAY: FLEX
-    }
-    
 }
+    
+
 
 
 /* -------desktop media queries------- */
 
-@media only screen and(min-widt:992px) and (max-width:1312px){
+@media only screen and(min-widt:993px) and (max-width:1312px){
     .view-all .view-button{
         display: none;
     }
@@ -290,14 +280,17 @@ main body design start
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 10px 30px;
+    width: 50%;
+    padding: 30px;
+    
 }
 
 
 .image-vs img {
-
+    
     width: 100%;
-    margin: 10px;
+    margin: 20px;
 }
 /* -------upcoming button design end------ */
 
@@ -437,3 +430,5 @@ font-size: 40px;
     font-size: 30px;
     color: #FFFFFF;
 }
+
+

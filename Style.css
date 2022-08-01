@@ -75,7 +75,7 @@ Media queries
             display: grid;
             grid-template-columns: repeat(1, 1fr);
          }
-         .view-all .view-button{
+         .tablet-view{
             display:none ;
          }
 
@@ -94,11 +94,23 @@ Media queries
          .blog-img img{
              width: 100%
          }
+         .container-button-info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: -10px;
+         }
+         .upcoming-button{
+            width: 612px;
+            height: 100px;
+            margin-bottom: 20px;
+         }
         }
                        
  /* -------Tablet device-------- */
-@media screen and(min-width:577px) and (max-width:992px){
+@media only screen and(min-width:577px) and (max-width:972px){
     .container-blogs{
+        display: grid;
         grid-template-columns: repeat(2,1fr);
     }
         .banner-title .main-tt {
@@ -114,6 +126,11 @@ Media queries
     width:100%;
    
 }
+     .tablet-view.view-button  {
+        display: block;
+     }
+
+
 .footer .footer-icon {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -140,10 +157,13 @@ Media queries
 
 /* -------desktop media queries------- */
 
-@media only screen and(min-widt:993px) and (max-width:1312px){
-    .view-all .view-button{
-        display: none;
-    }
+    @media only screen and(min-width:773px) and (max-width:1200px){
+     
+    
+     .view-button {
+            display: none;
+        }
+
     .footer-link {
                 color: #FFFFFF;
                 display: flex;
@@ -152,8 +172,8 @@ Media queries
                 padding-left: 20px;
                 margin: 40px;
                 align-content: space-between;
-        }
-}
+        } 
+    }
 
 
 
@@ -229,7 +249,7 @@ main body design start
 .upcoming-button{
     background-color:black ;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1fr,1fr,1fr);
     grid-column:5px ;
     height: 312px;
     width: 372px;
@@ -298,19 +318,23 @@ main body design start
 /* --------------
 main blogs start
 --------------- */
-.container-blogs{
+ .container-blogs{
     display: flex;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap: 10px;
     margin-top: 30px;
-}
-.blog-container{
+} 
+/* .blog-container{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     gap:10px;   
-}
+}  */
 
 .blog-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2,1fr) ;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     margin: 25px 40px;
@@ -360,33 +384,36 @@ main blogs start
  /* --------view all button start--------  */
 
 }
-.view-all{
-    align-self: center;
-    justify-items: center;
+.tablet-view{
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
     margin:10px 10px;
     padding:10px 10px;
     height: 70px;
-    display: none;
+    /* display: none; */
+    display: block;
+    margin: 0% auto;
 }
+
+
+
  .view-button{
     background-color: #f11414;
     border: 10px solid #f11414;
-    height: 30px;
-    width: 100px;
+    height: 50px;
+    width: 120px;
     border-radius: 25px;
     align-items: center;
     justify-content: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    
+
+    /* display: none; */
     
  }   
- .view-button a{
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    margin: 20px 20px;
-
- }
+ 
 
 /* -----------
 footer design
